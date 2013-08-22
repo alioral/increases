@@ -8,3 +8,5 @@ SUCCESS_MESSAGE = 'Data update has been successful'
 
 ERROR_DATA_COULD_NOT_BE_UPDATED_NO = 1
 ERROR_DATA_COULD_NOT_BE_UPDATED_MESSAGE = "Page views could not be updated right now"
+
+DB_URL = "mongodb://ali:1234@ds039768.mongolab.com:39768/heroku_app17663472"
