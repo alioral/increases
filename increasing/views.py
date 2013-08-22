@@ -6,7 +6,7 @@ from django.shortcuts import HttpResponse
 from analyzer import statics, helper
 from mongoengine import *
 
-connect('chartbeat')
+connect('heroku_app17663472', host=statics.DB_URL)
 
 def index(request):
 	resultList = helper.returnSiteInfo('')
