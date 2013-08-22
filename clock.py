@@ -1,10 +1,12 @@
 from apscheduler.scheduler import Scheduler
+import requests
 
 sched = Scheduler()
 
 @sched.interval_schedule(seconds=5)
 def timed_job():
-    print 'This job is run every five seconds.'
+    r = requests.get('http://increases.herokuapp.com/updatePages')
+    print "Pages update code: " + r.status_code
 
 sched.start()
 
