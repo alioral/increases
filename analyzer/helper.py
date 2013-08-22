@@ -4,7 +4,6 @@ import requests
 from increasing import models
 
 def updatePage(previousPage, currentPage):
-	print str(previousPage)
 	previousPage.path = currentPage['path']
 	previousPage.change = int(currentPage['visitors']) - previousPage.visitors
 	previousPage.visitors = currentPage['visitors']
